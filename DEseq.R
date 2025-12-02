@@ -93,3 +93,29 @@ loadings <- pca$rotation  # genes × PCs
 top_PC1_genes <- head(sort(abs(loadings[,1]), decreasing = TRUE), 20)
 top_PC1_genes
 
+#Differential expression analysis
+
+# Example: DKO vs WT (ignoring infection)
+res_genotype <- results(dds, contrast = c("genotype", "DKO", "WT"))
+summary(res_genotype)
+
+# Example: Case vs Control (within all samples)
+res_infection <- results(dds, contrast = c("infection", "Case", "Control"))
+summary(res_infection)
+
+de_genes <- res_genotype[which(res_genotype$padj < 0.05), ]
+nrow(de_genes)  # total DE genes
+table(de_genes$log2FoldChange > 0)  # TRUE = up, FALSE = down
+
+res_ordered <- res_genotype[order(res_genotype$padj), ]
+res_ordered <- res_ordered[!is.na(res_ordered$padj), ]
+
+top3_genes <- rownames(res_ordered)[1:3]
+print(top3_genes)
+
+# Normalized counts
+norm_counts <- counts(dds, normalized = TRUE)
+
+# Extract counts for genes of interest
+norm_counts[c("ENSMUSG00000032690", "ENSMUSG00000073409","ENSMUSG00000041827"), ]
+
