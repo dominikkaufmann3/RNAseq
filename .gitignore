@@ -1,0 +1,57 @@
+# -------------------------
+# RNA-seq Git Ignore File
+# -------------------------
+
+# Raw sequencing and mapping files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sam
+*.bam
+*.bai
+
+# Reference genomes and annotations
+*.fa
+*.fa.gz
+*.fasta
+*.fasta.gz
+*.gtf
+*.gtf.gz
+*.gff
+*.gff3
+
+# HISAT2 indices
+genome_index/
+hisat2_index*/
+*.ht2
+
+# FeatureCounts intermediate files
+*.summary
+
+# QC reports
+QC_reports/
+*.html
+*.zip
+
+# Log and SLURM output files
+*.out
+*.err
+*.log
+slurm-*
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# R session files
+*.Rhistory
+*.RData
+*.Rproj.user/
+.Rproj.user/
+
+# macOS and system junk
+.DS_Store
+Thumbs.db
