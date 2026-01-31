@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=samtools_index
-#SBATCH --output=samtools_index_%j.out
-#SBATCH --error=samtools_index_%j.err
+#SBATCH --output=logs/slurm/samtools_index_%j.out
+#SBATCH --error=logs/slurm/samtools_index_%j.err
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=4000
 #SBATCH --time=01:00:00

@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=hisat2_map
-#SBATCH --output=hisat2_map_%j.out
-#SBATCH --error=hisat2_map_%j.err
+#SBATCH --output=logs/slurm/hisat2_map_%j.out
+#SBATCH --error=logs/slurm/hisat2_map_%j.err
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=8000
 #SBATCH --time=04:00:00

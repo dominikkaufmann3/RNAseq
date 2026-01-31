@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=hisat2_index
-#SBATCH --output=hisat2_index_%j.out
-#SBATCH --error=hisat2_index_%j.err
+#SBATCH --output=logs/slurm/hisat2_index_%j.out
+#SBATCH --error=logs/slurm/hisat2_index_%j.err
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=8000M
 #SBATCH --time=03:00:00

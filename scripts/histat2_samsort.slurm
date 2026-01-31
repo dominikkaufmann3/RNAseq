@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=samtools_sort
-#SBATCH --output=samtools_sort_%j.out
-#SBATCH --error=samtools_sort_%j.err
+#SBATCH --output=logs/slurm/samtools_sort_%j.out
+#SBATCH --error=logs/slurm/samtools_sort_%j.err
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=25000
 #SBATCH --time=02:00:00

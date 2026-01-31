@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=samtools_view
-#SBATCH --output=samtools_view_%j.out
-#SBATCH --error=samtools_view_%j.err
+#SBATCH --output=logs/slurm/samtools_view_%j.out
+#SBATCH --error=logs/slurm/samtools_view_%j.err
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=4000
 #SBATCH --time=02:00:00

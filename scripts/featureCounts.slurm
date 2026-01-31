@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=featureCounts
-#SBATCH --output=featureCounts_%j.out
-#SBATCH --error=featureCounts_%j.err
+#SBATCH --output=logs/slurm/featureCounts_%j.out
+#SBATCH --error=logs/slurm/featureCounts_%j.err
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=1000
 #SBATCH --time=02:00:00
