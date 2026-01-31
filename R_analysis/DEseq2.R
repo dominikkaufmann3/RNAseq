@@ -139,17 +139,43 @@ as.data.frame(head(top_effect_genes, 20))
 
 
 # Genes of interest reported by Singhania et al. (2019)
-genes_of_interest <- c(
-  "ENSMUSG00000059668",  # Stat1
-  "ENSMUSG00000059741",  # Irf7
-  "ENSMUSG00000041515"   # Isg15
+library(AnnotationDbi)
+library(org.Mm.eg.db)
+
+# Get IDs of genes of interest
+mapIds(
+  org.Mm.eg.db,
+  keys = c("Stat1", "Irf7", "Isg15"),
+  column = "ENSEMBL",
+  keytype = "SYMBOL"
 )
 
-# Confirm genes are present in the results
-genes_of_interest[genes_of_interest %in% rownames(res_infection)]
+
+genes_of_interest <- c(
+  "ENSMUSG00000026104",  # Stat1
+  "ENSMUSG00000025498",  # Irf7
+  "ENSMUSG00000035692"   # Isg15
+)
+
+
+# Confirm genes are present in list of diff exp genes
+genes_of_interest[genes_of_interest %in% rownames(de_inf)]
 
 # Effect sizes and significance for selected genes
 res_infection[genes_of_interest, c("log2FoldChange", "padj")]
+
+out <- as.data.frame(
+  res_infection[genes_of_interest, c("log2FoldChange", "padj")]
+)
+
+write.table(
+  out,
+  file = "genes_of_interest_DE.tsv",
+  sep = "\t",
+  quote = FALSE,
+  col.names = NA
+)
+
 
 
 # Extract normalized counts for interpretation
@@ -210,5 +236,8 @@ dev.off()
 png("GO_barplot_BP.png", width = 900, height = 700)
 barplot(ego_bp, showCategory = 15)
 dev.off()
+
+
+
 
 
