@@ -10,7 +10,7 @@
 CONTAINER="/containers/apptainer/hisat2_samtools_408dfd02f175cd88.sif"
 
 # UPDATED PATHS ONLY
-REF_DIR="/data/users/dkaufmann3/RNAseqdata/reference"
+REF_DIR="/data/users/dkaufmann3/RNAseq/data/reference"
 INDEX_DIR="${REF_DIR}/genome_index"
 INDEX_BASE="${INDEX_DIR}/genome"
 
