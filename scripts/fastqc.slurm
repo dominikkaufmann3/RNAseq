@@ -8,8 +8,8 @@
 #SBATCH --error=logs/slurm/fastqc_%j.err
 
 # Make sure the output directory exists
-mkdir -p QC/fastqc
+mkdir -p ./QC/fastqc
 
 # Run FastQC inside the Apptainer container
 apptainer exec /containers/apptainer/fastqc-0.12.1.sif \
-    fastqc -t 1 QC/reads_Lung/*.fastq.gz -o QC/fastqc
+    fastqc -t 1 QC/reads_Lung/*.fastq.gz -o ./QC/fastqc
