@@ -8,9 +8,11 @@
 #SBATCH --partition=pibu_el8
 
 CONTAINER="/containers/apptainer/hisat2_samtools_408dfd02f175cd88.sif"
+
+# UPDATED PATHS ONLY
 READS_DIR="/data/users/dkaufmann3/RNAseq/QC/reads_Lung"
-MAP_DIR="/data/users/dkaufmann3/RNAseq/map"
-INDEX_BASE="${MAP_DIR}/genome_index/genome"
+MAP_DIR="/data/users/dkaufmann3/RNAseq/map/bam"
+INDEX_BASE="/data/users/dkaufmann3/RNAseq/data/reference/genome_index/genome"
 
 mkdir -p ${MAP_DIR}
 
@@ -26,4 +28,3 @@ do
         -p ${SLURM_CPUS_PER_TASK} \
         -S ${MAP_DIR}/${SAMPLE}.sam
 done
-

@@ -8,7 +8,9 @@
 #SBATCH --partition=pibu_el8
 
 CONTAINER="/containers/apptainer/hisat2_samtools_408dfd02f175cd88.sif"
-REF_DIR="/data/users/dkaufmann3/RNAseq/map"
+
+# UPDATED PATHS ONLY
+REF_DIR="/data/users/dkaufmann3/RNAseqdata/reference"
 INDEX_DIR="${REF_DIR}/genome_index"
 INDEX_BASE="${INDEX_DIR}/genome"
 

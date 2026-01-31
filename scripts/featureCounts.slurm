@@ -8,8 +8,8 @@
 #SBATCH --partition=pibu_el8
 
 CONTAINER="/containers/apptainer/subread_2.0.6.sif"
-MAP_DIR="/data/users/dkaufmann3/RNAseq/map"
-ANNOTATION="/data/users/dkaufmann3/RNAseq/map/Mus_musculus.GRCm39.115.gtf"
+MAP_DIR="/data/users/dkaufmann3/RNAseq/map/bam"
+ANNOTATION="/data/users/dkaufmann3/RNAseq/data/reference/Mus_musculus.GRCm39.115.gtf"
 OUT_DIR="/data/users/dkaufmann3/RNAseq/counts"
 
 mkdir -p ${OUT_DIR}

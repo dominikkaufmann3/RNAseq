@@ -8,7 +8,7 @@
 #SBATCH --partition=pibu_el8
 
 CONTAINER="/containers/apptainer/hisat2_samtools_408dfd02f175cd88.sif"
-MAP_DIR="/data/users/dkaufmann3/RNAseq/map"
+MAP_DIR="/data/users/dkaufmann3/RNAseq/map/bam"
 
 for BAM in ${MAP_DIR}/*.bam
 do
@@ -22,5 +22,5 @@ do
             ${BAM}
 
     # remove unsorted BAM to save space
-    # rm ${BAM}
+    rm ${BAM}
 done
