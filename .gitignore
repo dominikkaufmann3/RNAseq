@@ -1,4 +1,4 @@
-# -------------------------
+
 # RNA-seq Git Ignore File
 # -------------------------
 
@@ -26,12 +26,10 @@ genome_index/
 hisat2_index*/
 *.ht2
 
-# FeatureCounts intermediate files
-*.summary
+
 
 # QC reports
 QC_reports/
-*.html
 *.zip
 
 # Log and SLURM output files
@@ -46,11 +44,6 @@ slurm-*
 tmp/
 temp/
 
-# R session files
-*.Rhistory
-*.RData
-*.Rproj.user/
-.Rproj.user/
 
 # macOS and system junk
 .DS_Store

@@ -1,0 +1,15 @@
+Status	/data/users/dkaufmann3/RNAseq/map/SRR7821918.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821919.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821920.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821921.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821922.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821923.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821924.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821925.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821927.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821937.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821938.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821939.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821940.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821941.sorted.bam	/data/users/dkaufmann3/RNAseq/map/SRR7821942.sorted.bam
+Assigned	58329095	57470154	57424489	64132545	59191293	60058802	85144840	52550243	47795440	71116665	67974820	73803525	56460695	63118503	69941955
+Unassigned_Unmapped	1949455	1914004	4686714	2215457	2014458	3076750	3331136	2650360	2102811	2228687	2259260	1787316	2668793	1865095	2266306
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	13208299	12890687	16541573	14361405	13752289	15105356	18472460	13151061	12866083	15924503	10471760	17597973	13331778	13262504	14288664
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	6157804	7429869	11109598	8440862	8311433	7684072	12817000	8935594	8180314	9233871	6632281	9783635	8451315	7560435	9703771
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	1297590	1294869	1176335	1434101	1249218	1167235	1627913	952392	890306	1342488	1396568	1515649	1082037	1163372	1325583
